@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: darkred;
+        }
+        input[type=text]{
+            border: 2px solid red;
+        }
+        input[type=password]{
+            border: 2px solid blue;
+        }
+        h2{
+            text-align: center;
+            color: darkred;
+        }
+       ul > li{
+        font-size: 20px;
+        font-family: monospace;
+        color: blueviolet;
+
+       }
+       h3{
+        text-align: center;
+        color: darkred;
+       }
+       h3 + p {
+        color: rgb(255, 0, 0);
+        font-size: 30px;
+       }
+       a:hover{
+        font-size: 25px; color: chartreuse;
+       }
+      li:nth-child(2){
+background-color:yellow;
+      }
+        li:nth-child(3){
+background-color:rgb(220, 223, 243);
+      }
+      p:not(.h11){
+        border: 2px dashed darkblue;
+      }
+      .h11::before{
+content:'👋';
+      }
+      .h12::after{
+        content: '☺️';
+      }
+      .h12::first-letter{
+        font-size: 200%;
+        color:blue ;
+      }
+    </style>
+</head>
+<body>
+    <h1>Advance Selectors </h1>
+    <label>Email</label>
+    <input type="text"><br><br>
+<label>Password</label>
+<input type="password">
+
+<h2>Child Selectors</h2>
+<ul>
+    <li>Tea</li>
+    <li>Milk</li>
+    <li>Juice</li>
+    <li>Coffee</li>
+</ul>
+</body>
+</html>
+<h3>Sibling Selectors</h3>
+<p class="h11">HELLO EVERYONE</p>
+<p class="h12">HELLO EVERYONE</p>
+<a href="#">WEDNESDAY</a> 
